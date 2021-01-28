@@ -1,0 +1,88 @@
+body
+	{
+		background: url(https://git.io/JUW4t);
+		background-size: cover;
+		overflow: hidden;
+	}
+.container{
+  text-align:center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  color: #8B0000;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 2s 1;
+}
+.text2{
+  font-size: 50px;   
+  color: #FFD700;
+    font-family: cursive;
+    animation: text 2s 1;
+}
+.text3{
+    font-size:100px;
+    color: #FF4500;
+    font-family:monospace;
+    animation: text 2s 1;
+}
+.text4{
+    font-size: 40px;
+    color: #FF0000;
+    font-family: serif;
+    animation: text 2s 1;
+}
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -20px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+#panda
+	{
+		position:relative;
+		top:600px;
+		background: url(https://git.io/JUW4L); 
+		width:250px;
+		height:330px;		
+		animation:walking_animation 1s steps(12) infinite,move_forward 8s linear infinite;	
+	}
+
+@keyframes walking_animation
+	{
+		0%{background-position:0px;}
+		100%{background-position:3000px;}
+	}
+
+@keyframes move_forward
+	{
+		0%{transform:translateX(-100px);}
+		100%{transform:translateX(1366px);}
+	}
+
+#street
+	{
+		position:relative;
+		top:600px;
+		border-bottom:5px groove green;
+	}
